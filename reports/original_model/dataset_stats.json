@@ -1,0 +1,58 @@
+{
+  "per_split": {
+    "train": {
+      "images": 41954,
+      "fire_boxes": 33643,
+      "smoke_boxes": 22123,
+      "images_with_fire": 13254,
+      "images_with_smoke": 17716,
+      "negative_images": 19858
+    },
+    "test": {
+      "images": 1958,
+      "fire_boxes": 1500,
+      "smoke_boxes": 1122,
+      "images_with_fire": 635,
+      "images_with_smoke": 954,
+      "negative_images": 807
+    },
+    "val": {
+      "images": 3829,
+      "fire_boxes": 3136,
+      "smoke_boxes": 2139,
+      "images_with_fire": 1342,
+      "images_with_smoke": 1742,
+      "negative_images": 1615
+    }
+  },
+  "per_source": {
+    "dfire": {
+      "images": 12854,
+      "fire_boxes": 10946,
+      "smoke_boxes": 8085,
+      "images_with_fire": 4059,
+      "images_with_smoke": 7057,
+      "negative_images": 5223
+    },
+    "fasdd": {
+      "images": 32934,
+      "fire_boxes": 27333,
+      "smoke_boxes": 17299,
+      "images_with_fire": 11172,
+      "images_with_smoke": 13355,
+      "negative_images": 15104
+    },
+    "street": {
+      "images": 1953,
+      "fire_boxes": 0,
+      "smoke_boxes": 0,
+      "images_with_fire": 0,
+      "images_with_smoke": 0,
+      "negative_images": 1953
+    }
+  },
+  "exact_duplicates": 12882,
+  "near_duplicates": 7904,
+  "groups": 28709,
+  "build_time_s": 32.7
+}

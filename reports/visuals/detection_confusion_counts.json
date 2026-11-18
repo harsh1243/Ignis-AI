@@ -1,0 +1,7 @@
+{
+  "source": "Saved confusion matrix figure in 4_threshold_tuning.ipynb and the preserved figures/threshold_confusion_matrices.png. Row order is actual fire, smoke, background; column order is predicted fire, smoke, background. Background-to-background is not defined for the box matcher.",
+  "val_baseline": [[1703,2,1357],[11,1216,844],[748,214,null]],
+  "val_tuned": [[1922,4,1136],[13,1362,696],[1142,322,null]],
+  "hard_val_baseline": [[192,0,66],[0,155,126],[136,80,null]],
+  "hard_val_tuned": [[210,0,48],[0,175,106],[215,129,null]]
+}

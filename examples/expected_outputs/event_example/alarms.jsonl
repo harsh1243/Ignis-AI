@@ -1,0 +1,1 @@
+{"source_id": "event_example", "event_id": "event_example-0001", "label": "fire", "decision_timestamp_s": 0.601, "decision_frame_index": 18, "confidence": 0.8216, "onset_timestamp_s": 0.0, "onset_frame_index": 0, "track_id": 1, "hits_in_window": 4, "bbox_xyxy": [109.8, 163.5, 167.6, 262.0]}

@@ -1,0 +1,38 @@
+{
+  "old_replay": 10000,
+  "new_train_by_source": {
+    "fireandsmoke_part1": 981,
+    "fireandsmoke_part2": 1277
+  },
+  "new_negatives_by_source": {
+    "fireandsmoke_part1": 579,
+    "fireandsmoke_part2": 875
+  },
+  "splits": {
+    "train": {
+      "total": 12258,
+      "positive": 9304,
+      "negative": 2954
+    },
+    "val": {
+      "total": 3829,
+      "positive": 2214,
+      "negative": 1615
+    },
+    "test": {
+      "total": 1958,
+      "positive": 1151,
+      "negative": 807
+    },
+    "hard_val": {
+      "total": 869,
+      "positive": 282,
+      "negative": 587
+    },
+    "hard_test": {
+      "total": 491,
+      "positive": 282,
+      "negative": 209
+    }
+  }
+}

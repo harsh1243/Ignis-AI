@@ -1,0 +1,72 @@
+paths:
+  raw_dir: /root/lab/volume/raw
+  work_dir: /root/work
+  dataset_dir: /root/work/dataset
+  runs_dir: /root/lab/volume/runs
+  crops_dir: /root/work/verifier_crops
+data:
+  sources:
+    dfire:
+      enabled: true
+      cap: null
+    fasdd:
+      enabled: true
+      cap: 45000
+      max_neg_frac: 0.35
+  street:
+    enabled: true
+    n_train: 2000
+    n_mine: 800
+    n_test: 400
+  extra_sources: []
+  negative_images_dir: negatives
+  normal_videos_dir: normal_videos
+  normal_video_every_s: 2.0
+  normal_video_max_frames: 300
+  max_side: 960
+  val_frac: 0.08
+  test_frac: 0.04
+  dup_dist: 3
+  group_dist: 8
+  seed: 0
+detector:
+  model: yolo26m.pt
+  imgsz: 800
+  batch: 64
+  workers: 16
+  device: 0
+  hours_v1: 2.0
+  hours_v2: 0.75
+  lr0_v2: 0.003
+  augment:
+    hsv_h: 0.005
+    hsv_s: 0.6
+    hsv_v: 0.45
+    scale: 0.5
+    translate: 0.1
+    fliplr: 0.5
+    mosaic: 1.0
+    mixup: 0.05
+    close_mosaic: 3
+mining:
+  video_dirs:
+  - normal_videos
+  - mining_videos
+  every_s: 1.0
+  conf: 0.25
+  max_per_video: 300
+  repeat: 2
+verifier:
+  epochs: 8
+  batch: 128
+  lr: 0.0005
+  imgsz: 224
+  pad: 0.3
+  mine_conf: 0.1
+  device: cuda:0
+  max_images:
+    train: 30000
+    val: 4000
+  caps:
+    train: 15000
+    val: 2000

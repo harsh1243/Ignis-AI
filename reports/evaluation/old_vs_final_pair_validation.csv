@@ -1,0 +1,3 @@
+split,model_pair,images,precision_%,recall_%,F1_%,mAP50_%,mAP50-95_%,clean_images_flagged
+val,2nd fine-tune YOLO + old verifier,3764,77.3,56.85,65.51,55.56,36.72,39
+val,Epoch 11 YOLO + final verifier,3764,74.96,56.87,64.67,52.66,33.88,72

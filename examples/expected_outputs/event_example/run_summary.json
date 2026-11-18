@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "frames_read": 510,
+  "frames_processed": 85,
+  "frames_skipped": 425,
+  "total_runtime_s": 84.685,
+  "errors": [],
+  "warnings": [],
+  "alarms_raised": 1,
+  "command": "infer.py --source examples/clips/event_example.mp4 --config config.yaml --output-dir examples/expected_outputs/event_example --device cpu --no-display",
+  "config": "/workspace/scratch/14c0ebb8214e/.run4-examples-work/project/config.yaml",
+  "device_requested": "cpu",
+  "videos": [
+    {
+      "source": "examples/clips/event_example.mp4",
+      "source_id": "event_example",
+      "status": "completed",
+      "frames_read": 510,
+      "frames_processed": 85,
+      "frames_skipped": 425,
+      "frames_failed": 0,
+      "alarms": 1,
+      "fps": 29.97,
+      "errors": [],
+      "frame_stride": 6,
+      "duration_s": 17.017,
+      "runtime_s": 76.056,
+      "realtime_factor": 0.22
+    }
+  ],
+  "device_used": "cpu",
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.11.0+cpu",
+    "cuda_available": false,
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "source_id": "event_example",
+  "source": "examples/clips/event_example.mp4",
+  "fps": 29.97,
+  "frame_stride": 6,
+  "duration_s": 17.017
+}

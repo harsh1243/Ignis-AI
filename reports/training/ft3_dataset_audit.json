@@ -1,0 +1,20 @@
+{
+  "training": {
+    "fire_only": 5318,
+    "both": 4682,
+    "smoke_only": 5000,
+    "background": 15186,
+    "images": 30186
+  },
+  "validation": {
+    "images": 3764,
+    "exact_train_matches_removed": 65,
+    "background": 1615,
+    "fire_boxes": 3062,
+    "smoke_boxes": 2071
+  },
+  "hard_validation": {
+    "images": 869,
+    "background": 587
+  }
+}

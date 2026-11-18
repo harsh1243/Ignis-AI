@@ -1,0 +1,858 @@
+{
+  "dataset": {
+    "per_split": {
+      "train": {
+        "images": 41954,
+        "fire_boxes": 33643,
+        "smoke_boxes": 22123,
+        "images_with_fire": 13254,
+        "images_with_smoke": 17716,
+        "negative_images": 19858
+      },
+      "test": {
+        "images": 1958,
+        "fire_boxes": 1500,
+        "smoke_boxes": 1122,
+        "images_with_fire": 635,
+        "images_with_smoke": 954,
+        "negative_images": 807
+      },
+      "val": {
+        "images": 3829,
+        "fire_boxes": 3136,
+        "smoke_boxes": 2139,
+        "images_with_fire": 1342,
+        "images_with_smoke": 1742,
+        "negative_images": 1615
+      }
+    },
+    "per_source": {
+      "dfire": {
+        "images": 12854,
+        "fire_boxes": 10946,
+        "smoke_boxes": 8085,
+        "images_with_fire": 4059,
+        "images_with_smoke": 7057,
+        "negative_images": 5223
+      },
+      "fasdd": {
+        "images": 32934,
+        "fire_boxes": 27333,
+        "smoke_boxes": 17299,
+        "images_with_fire": 11172,
+        "images_with_smoke": 13355,
+        "negative_images": 15104
+      },
+      "street": {
+        "images": 1953,
+        "fire_boxes": 0,
+        "smoke_boxes": 0,
+        "images_with_fire": 0,
+        "images_with_smoke": 0,
+        "negative_images": 1953
+      }
+    },
+    "exact_duplicates": 12882,
+    "near_duplicates": 7904,
+    "groups": 28709,
+    "build_time_s": 32.7
+  },
+  "detector_v1": {
+    "weights": "/__modal/volumes/vo-E7ioX3szW0Ac4txUqjOrhY/runs/det_v1/weights/best.pt",
+    "epochs": 26,
+    "final_epoch": {
+      "epoch": 26.0,
+      "time": 7211.21,
+      "train/box_loss": 1.19135,
+      "train/cls_loss": 0.81264,
+      "train/l1_loss": 0.01135,
+      "metrics/precision(B)": 0.77296,
+      "metrics/recall(B)": 0.6801,
+      "metrics/mAP50(B)": 0.76293,
+      "metrics/mAP50-95(B)": 0.48742,
+      "val/box_loss": 1.33433,
+      "val/cls_loss": 1.13307,
+      "val/l1_loss": 0.01616,
+      "lr/pg0": 0.000408273,
+      "lr/pg1": 0.000136091,
+      "lr/pg2": 0.000408273,
+      "lr/pg3": 0.000136091,
+      "lr/pg4": 0.000408273,
+      "lr/pg5": 0.000136091,
+      "lr/pg6": 0.000408273,
+      "lr/pg7": 0.000136091
+    },
+    "image_level_val": [
+      {
+        "conf": 0.1,
+        "fire_image_recall": 0.9828614008941878,
+        "smoke_image_recall": 0.9661308840413318,
+        "negative_image_fp_rate": 0.027244582043343655,
+        "n_fire_imgs": 1342,
+        "n_smoke_imgs": 1742,
+        "n_neg_imgs": 1615
+      },
+      {
+        "conf": 0.15,
+        "fire_image_recall": 0.9769001490312966,
+        "smoke_image_recall": 0.9575200918484501,
+        "negative_image_fp_rate": 0.0173374613003096,
+        "n_fire_imgs": 1342,
+        "n_smoke_imgs": 1742,
+        "n_neg_imgs": 1615
+      },
+      {
+        "conf": 0.2,
+        "fire_image_recall": 0.973919523099851,
+        "smoke_image_recall": 0.9437428243398392,
+        "negative_image_fp_rate": 0.015479876160990712,
+        "n_fire_imgs": 1342,
+        "n_smoke_imgs": 1742,
+        "n_neg_imgs": 1615
+      },
+      {
+        "conf": 0.25,
+        "fire_image_recall": 0.9634873323397913,
+        "smoke_image_recall": 0.9253731343283582,
+        "negative_image_fp_rate": 0.013622291021671827,
+        "n_fire_imgs": 1342,
+        "n_smoke_imgs": 1742,
+        "n_neg_imgs": 1615
+      },
+      {
+        "conf": 0.3,
+        "fire_image_recall": 0.9523099850968704,
+        "smoke_image_recall": 0.9018369690011481,
+        "negative_image_fp_rate": 0.011145510835913313,
+        "n_fire_imgs": 1342,
+        "n_smoke_imgs": 1742,
+        "n_neg_imgs": 1615
+      },
+      {
+        "conf": 0.4,
+        "fire_image_recall": 0.9083457526080477,
+        "smoke_image_recall": 0.8501722158438576,
+        "negative_image_fp_rate": 0.007430340557275541,
+        "n_fire_imgs": 1342,
+        "n_smoke_imgs": 1742,
+        "n_neg_imgs": 1615
+      },
+      {
+        "conf": 0.5,
+        "fire_image_recall": 0.8315946348733234,
+        "smoke_image_recall": 0.7743972445464983,
+        "negative_image_fp_rate": 0.004953560371517028,
+        "n_fire_imgs": 1342,
+        "n_smoke_imgs": 1742,
+        "n_neg_imgs": 1615
+      }
+    ]
+  },
+  "mining": {
+    "normal_videos": 0,
+    "street_mining_frames": true,
+    "mined_frames_incl_copies": 2
+  },
+  "street_fp_test": {
+    "v1": {
+      "n_images": 396,
+      "fp_rate": {
+        "0.1": 0.017676767676767676,
+        "0.2": 0.007575757575757576,
+        "0.25": 0.0025252525252525255,
+        "0.3": 0.0025252525252525255,
+        "0.4": 0.0,
+        "0.5": 0.0
+      }
+    },
+    "final": {
+      "n_images": 396,
+      "fp_rate": {
+        "0.1": 0.022727272727272728,
+        "0.2": 0.007575757575757576,
+        "0.25": 0.0025252525252525255,
+        "0.3": 0.0025252525252525255,
+        "0.4": 0.0,
+        "0.5": 0.0
+      }
+    }
+  },
+  "detector_final": {
+    "source_run": "/__modal/volumes/vo-E7ioX3szW0Ac4txUqjOrhY/runs/det_v2/weights/best.pt",
+    "image_level_test": [
+      {
+        "conf": 0.1,
+        "fire_image_recall": 0.9826771653543307,
+        "smoke_image_recall": 0.9339622641509434,
+        "negative_image_fp_rate": 0.03965303593556382,
+        "n_fire_imgs": 635,
+        "n_smoke_imgs": 954,
+        "n_neg_imgs": 807
+      },
+      {
+        "conf": 0.15,
+        "fire_image_recall": 0.9748031496062992,
+        "smoke_image_recall": 0.9213836477987422,
+        "negative_image_fp_rate": 0.030978934324659233,
+        "n_fire_imgs": 635,
+        "n_smoke_imgs": 954,
+        "n_neg_imgs": 807
+      },
+      {
+        "conf": 0.2,
+        "fire_image_recall": 0.9669291338582677,
+        "smoke_image_recall": 0.909853249475891,
+        "negative_image_fp_rate": 0.02973977695167286,
+        "n_fire_imgs": 635,
+        "n_smoke_imgs": 954,
+        "n_neg_imgs": 807
+      },
+      {
+        "conf": 0.25,
+        "fire_image_recall": 0.9574803149606299,
+        "smoke_image_recall": 0.8846960167714885,
+        "negative_image_fp_rate": 0.027261462205700124,
+        "n_fire_imgs": 635,
+        "n_smoke_imgs": 954,
+        "n_neg_imgs": 807
+      },
+      {
+        "conf": 0.3,
+        "fire_image_recall": 0.9417322834645669,
+        "smoke_image_recall": 0.859538784067086,
+        "negative_image_fp_rate": 0.023543990086741014,
+        "n_fire_imgs": 635,
+        "n_smoke_imgs": 954,
+        "n_neg_imgs": 807
+      },
+      {
+        "conf": 0.4,
+        "fire_image_recall": 0.8960629921259843,
+        "smoke_image_recall": 0.8039832285115304,
+        "negative_image_fp_rate": 0.013630731102850062,
+        "n_fire_imgs": 635,
+        "n_smoke_imgs": 954,
+        "n_neg_imgs": 807
+      },
+      {
+        "conf": 0.5,
+        "fire_image_recall": 0.84251968503937,
+        "smoke_image_recall": 0.7452830188679245,
+        "negative_image_fp_rate": 0.008674101610904586,
+        "n_fire_imgs": 635,
+        "n_smoke_imgs": 954,
+        "n_neg_imgs": 807
+      }
+    ]
+  },
+  "detector_test_map": {
+    "mAP50": 0.719529571205892,
+    "mAP50-95": 0.44045506478941,
+    "precision": 0.745355234525157,
+    "recall": 0.6626746332108112,
+    "per_class_mAP50": {
+      "fire": 0.7195414096354678,
+      "smoke": 0.7195177327763163
+    }
+  },
+  "verifier_crops": {
+    "train": {
+      "fire": 15000,
+      "smoke": 15000,
+      "not_fire": 10392
+    },
+    "val": {
+      "fire": 2000,
+      "smoke": 2000,
+      "not_fire": 1615
+    }
+  },
+  "verifier": {
+    "best_epoch": {
+      "epoch": 3,
+      "train_loss": 0.5048985333669753,
+      "train_acc": 0.8182787698412698,
+      "val_loss": 0.4410929195125084,
+      "val_acc": 0.7959038290293856,
+      "val_event_recall": 0.86275,
+      "val_notfire_rejected": 0.6681114551083591,
+      "per_class_recall": {
+        "fire": 0.754,
+        "not_fire": 0.6854489164086688,
+        "smoke": 0.927
+      },
+      "lr": 0.0003689868482592684,
+      "epoch_time_s": 44.134716272354126
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.655892633067237,
+        "train_acc": 0.7341021825396825,
+        "val_loss": 0.4668224130718175,
+        "val_acc": 0.7857524487978629,
+        "val_event_recall": 0.8805,
+        "val_notfire_rejected": 0.6204334365325077,
+        "per_class_recall": {
+          "fire": 0.741,
+          "not_fire": 0.6408668730650154,
+          "smoke": 0.9475
+        },
+        "lr": 0.0004923500664848326,
+        "epoch_time_s": 47.31671738624573
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.5381543366681962,
+        "train_acc": 0.800843253968254,
+        "val_loss": 0.44151641499327426,
+        "val_acc": 0.7969723953695459,
+        "val_event_recall": 0.84825,
+        "val_notfire_rejected": 0.7188854489164087,
+        "per_class_recall": {
+          "fire": 0.7395,
+          "not_fire": 0.7337461300309598,
+          "smoke": 0.9055
+        },
+        "lr": 0.00044728512734909845,
+        "epoch_time_s": 44.04605412483215
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.5048985333669753,
+        "train_acc": 0.8182787698412698,
+        "val_loss": 0.4410929195125084,
+        "val_acc": 0.7959038290293856,
+        "val_event_recall": 0.86275,
+        "val_notfire_rejected": 0.6681114551083591,
+        "per_class_recall": {
+          "fire": 0.754,
+          "not_fire": 0.6854489164086688,
+          "smoke": 0.927
+        },
+        "lr": 0.0003689868482592684,
+        "epoch_time_s": 44.134716272354126
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.4744138925794571,
+        "train_acc": 0.8381944444444445,
+        "val_loss": 0.4537740750774038,
+        "val_acc": 0.7921638468388246,
+        "val_event_recall": 0.879,
+        "val_notfire_rejected": 0.6260061919504644,
+        "per_class_recall": {
+          "fire": 0.7575,
+          "not_fire": 0.631578947368421,
+          "smoke": 0.9565
+        },
+        "lr": 0.00027064483636808314,
+        "epoch_time_s": 44.41292881965637
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.4364303691992684,
+        "train_acc": 0.8600198412698413,
+        "val_loss": 0.47047303837532456,
+        "val_acc": 0.788780053428317,
+        "val_event_recall": 0.849,
+        "val_notfire_rejected": 0.6817337461300309,
+        "per_class_recall": {
+          "fire": 0.719,
+          "not_fire": 0.6873065015479877,
+          "smoke": 0.9405
+        },
+        "lr": 0.00016882513269882916,
+        "epoch_time_s": 44.29679036140442
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.39636694155042135,
+        "train_acc": 0.8840029761904762,
+        "val_loss": 0.4736804164209646,
+        "val_acc": 0.7959038290293856,
+        "val_event_recall": 0.875,
+        "val_notfire_rejected": 0.648297213622291,
+        "per_class_recall": {
+          "fire": 0.7575,
+          "not_fire": 0.6575851393188854,
+          "smoke": 0.946
+        },
+        "lr": 8.067960709356478e-05,
+        "epoch_time_s": 44.32855296134949
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.3609934066969251,
+        "train_acc": 0.9062748015873016,
+        "val_loss": 0.4904404022045042,
+        "val_acc": 0.7943009795191451,
+        "val_event_recall": 0.87575,
+        "val_notfire_rejected": 0.638390092879257,
+        "per_class_recall": {
+          "fire": 0.765,
+          "not_fire": 0.6421052631578947,
+          "smoke": 0.9465
+        },
+        "lr": 2.1056668336235624e-05,
+        "epoch_time_s": 44.16278386116028
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.34381988341846165,
+        "train_acc": 0.9164434523809524,
+        "val_loss": 0.49116135709856834,
+        "val_acc": 0.7955476402493321,
+        "val_event_recall": 0.8805,
+        "val_notfire_rejected": 0.6328173374613003,
+        "per_class_recall": {
+          "fire": 0.7845,
+          "not_fire": 0.638390092879257,
+          "smoke": 0.9335
+        },
+        "lr": 0.0,
+        "epoch_time_s": 44.27743196487427
+      }
+    ]
+  },
+  "street_fp_pipeline": {
+    "before_tuning": {
+      "n_images": 396,
+      "detector_rate": 0.007575757575757576,
+      "after_verifier_rate": 0.0
+    },
+    "final": {
+      "n_images": 396,
+      "detector_rate": 0.007575757575757576,
+      "after_verifier_rate": 0.0
+    }
+  },
+  "video_eval_before_tuning": {
+    "event_recall": 1.0,
+    "events": 23,
+    "events_detected": 23,
+    "false_alarms": 1,
+    "false_alarms_per_hour": 4.304993958917973,
+    "normal_hours": 0.232,
+    "mean_time_to_alarm_s": 2.2269565217391305,
+    "missed_event_videos": [],
+    "videos_with_false_alarms": [
+      "fs_fire_negsVideo1.858.avi"
+    ]
+  },
+  "video_eval_after_tuning": {
+    "event_recall": 1.0,
+    "events": 23,
+    "events_detected": 23,
+    "false_alarms": 0,
+    "false_alarms_per_hour": 0.0,
+    "normal_hours": 0.232,
+    "mean_time_to_alarm_s": 2.4403478260869567,
+    "missed_event_videos": [],
+    "videos_with_false_alarms": []
+  },
+  "video_eval_final": {
+    "summary": {
+      "event_recall": 1.0,
+      "events": 23,
+      "events_detected": 23,
+      "false_alarms": 0,
+      "false_alarms_per_hour": 0.0,
+      "normal_hours": 0.232,
+      "mean_time_to_alarm_s": 2.4403478260869567,
+      "missed_event_videos": [],
+      "videos_with_false_alarms": []
+    },
+    "per_video": [
+      {
+        "video": "fs_fire_posVideo1.868.avi",
+        "kind": "event",
+        "duration_s": 29.3,
+        "alarms": [
+          [
+            "fire",
+            2.6
+          ],
+          [
+            "smoke",
+            2.8
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo10.869.avi",
+        "kind": "event",
+        "duration_s": 7.8,
+        "alarms": [
+          [
+            "fire",
+            0.801
+          ],
+          [
+            "smoke",
+            1.001
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo11.870.avi",
+        "kind": "event",
+        "duration_s": 11.9,
+        "alarms": [
+          [
+            "fire",
+            2.2
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo2.871.avi",
+        "kind": "event",
+        "duration_s": 17.0,
+        "alarms": [
+          [
+            "fire",
+            0.601
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo3.872.avi",
+        "kind": "event",
+        "duration_s": 12.7,
+        "alarms": [
+          [
+            "fire",
+            0.601
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo4.873.avi",
+        "kind": "event",
+        "duration_s": 55.2,
+        "alarms": [
+          [
+            "fire",
+            0.601
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo5.874.avi",
+        "kind": "event",
+        "duration_s": 80.3,
+        "alarms": [
+          [
+            "fire",
+            0.601
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo6.875.avi",
+        "kind": "event",
+        "duration_s": 25.8,
+        "alarms": [
+          [
+            "fire",
+            0.8
+          ],
+          [
+            "smoke",
+            3.0
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo7.876.avi",
+        "kind": "event",
+        "duration_s": 54.7,
+        "alarms": [
+          [
+            "fire",
+            31.0
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo8.877.avi",
+        "kind": "event",
+        "duration_s": 17.1,
+        "alarms": [
+          [
+            "fire",
+            0.601
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_posVideo9.878.avi",
+        "kind": "event",
+        "duration_s": 22.1,
+        "alarms": [
+          [
+            "fire",
+            0.601
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos01.817.avi",
+        "kind": "event",
+        "duration_s": 17.0,
+        "alarms": [
+          [
+            "smoke",
+            1.25
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos02.818.avi",
+        "kind": "event",
+        "duration_s": 57.7,
+        "alarms": [
+          [
+            "smoke",
+            1.001
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos04.820.avi",
+        "kind": "event",
+        "duration_s": 78.6,
+        "alarms": [
+          [
+            "smoke",
+            1.0
+          ],
+          [
+            "fire",
+            64.6
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos05.821.avi",
+        "kind": "event",
+        "duration_s": 109.6,
+        "alarms": [
+          [
+            "smoke",
+            1.066
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos06.822.avi",
+        "kind": "event",
+        "duration_s": 20.1,
+        "alarms": [
+          [
+            "smoke",
+            1.0
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos07.823.avi",
+        "kind": "event",
+        "duration_s": 70.1,
+        "alarms": [
+          [
+            "smoke",
+            3.0
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos08.824.avi",
+        "kind": "event",
+        "duration_s": 24.2,
+        "alarms": [
+          [
+            "smoke",
+            1.8
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos09.825.avi",
+        "kind": "event",
+        "duration_s": 27.6,
+        "alarms": [
+          [
+            "smoke",
+            1.0
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos10.826.avi",
+        "kind": "event",
+        "duration_s": 49.0,
+        "alarms": [
+          [
+            "smoke",
+            1.001
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos11.827.avi",
+        "kind": "event",
+        "duration_s": 27.1,
+        "alarms": [
+          [
+            "smoke",
+            1.0
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos12.828.avi",
+        "kind": "event",
+        "duration_s": 12.1,
+        "alarms": [
+          [
+            "smoke",
+            1.002
+          ]
+        ]
+      },
+      {
+        "video": "fs_smoke_testpos13.829.avi",
+        "kind": "event",
+        "duration_s": 15.4,
+        "alarms": [
+          [
+            "smoke",
+            1.001
+          ]
+        ]
+      },
+      {
+        "video": "fs_fire_negsVideo1.858.avi",
+        "kind": "normal",
+        "duration_s": 189.1,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo12.1074.avi",
+        "kind": "normal",
+        "duration_s": 26.1,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo16.1077.avi",
+        "kind": "normal",
+        "duration_s": 10.6,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo2.859.avi",
+        "kind": "normal",
+        "duration_s": 15.5,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo3.860.avi",
+        "kind": "normal",
+        "duration_s": 16.0,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo4.861.avi",
+        "kind": "normal",
+        "duration_s": 64.4,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo5.862.avi",
+        "kind": "normal",
+        "duration_s": 14.6,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo6.863.avi",
+        "kind": "normal",
+        "duration_s": 45.7,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo7.864.avi",
+        "kind": "normal",
+        "duration_s": 18.0,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo8.865.avi",
+        "kind": "normal",
+        "duration_s": 125.5,
+        "alarms": []
+      },
+      {
+        "video": "fs_fire_negsVideo9.866.avi",
+        "kind": "normal",
+        "duration_s": 25.8,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg01.807.avi",
+        "kind": "normal",
+        "duration_s": 10.0,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg02.808.avi",
+        "kind": "normal",
+        "duration_s": 45.1,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg03.809.avi",
+        "kind": "normal",
+        "duration_s": 6.1,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg04.810.avi",
+        "kind": "normal",
+        "duration_s": 113.6,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg05.811.avi",
+        "kind": "normal",
+        "duration_s": 10.0,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg06.812.avi",
+        "kind": "normal",
+        "duration_s": 10.0,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg07.813.avi",
+        "kind": "normal",
+        "duration_s": 31.0,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg08.814.avi",
+        "kind": "normal",
+        "duration_s": 30.0,
+        "alarms": []
+      },
+      {
+        "video": "fs_smoke_testneg09.815.avi",
+        "kind": "normal",
+        "duration_s": 28.9,
+        "alarms": []
+      }
+    ]
+  }
+}

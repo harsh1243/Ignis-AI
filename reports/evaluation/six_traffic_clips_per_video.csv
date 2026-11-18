@@ -1,0 +1,13 @@
+video,pair,frames_checked,yolo_flagged_frames,verified_flagged_frames,false_fire_alarms,false_smoke_alarms,total_false_alarms,alarm_times_s
+r1.mp4,2nd fine-tune + old verifier,94,0,0,0,0,0,
+r1.mp4,3rd fine-tune + final verifier,94,0,0,0,0,0,
+r2.mp4,2nd fine-tune + old verifier,258,2,1,0,0,0,
+r2.mp4,3rd fine-tune + final verifier,258,3,3,0,0,0,
+r3.mp4,2nd fine-tune + old verifier,68,0,0,0,0,0,
+r3.mp4,3rd fine-tune + final verifier,68,0,0,0,0,0,
+r4.mp4,2nd fine-tune + old verifier,93,0,0,0,0,0,
+r4.mp4,3rd fine-tune + final verifier,93,0,0,0,0,0,
+r5.mp4,2nd fine-tune + old verifier,43,1,1,0,0,0,
+r5.mp4,3rd fine-tune + final verifier,43,0,0,0,0,0,
+r6.mp4,2nd fine-tune + old verifier,155,0,0,0,0,0,
+r6.mp4,3rd fine-tune + final verifier,155,0,0,0,0,0,

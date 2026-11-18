@@ -1,0 +1,13 @@
+video,expected,pair,frames_checked,yolo_flagged_frames,verified_flagged_frames,fire_alarms,smoke_alarms,expected_alarm_detected,first_expected_alarm_s,alarm_times_s
+f1.mp4,fire,2nd fine-tune + old verifier,1180,1177,1171,1,1,True,0.60,"fire 0.60, smoke 212.00"
+f1.mp4,fire,3rd fine-tune + final verifier,1180,1180,1180,1,0,True,0.60,fire 0.60
+f2.mp4,fire,2nd fine-tune + old verifier,353,352,304,1,0,True,0.60,fire 0.60
+f2.mp4,fire,3rd fine-tune + final verifier,353,327,326,1,0,True,0.60,fire 0.60
+f3.mp4,fire,2nd fine-tune + old verifier,40,40,40,1,0,True,0.60,fire 0.60
+f3.mp4,fire,3rd fine-tune + final verifier,40,40,40,1,0,True,0.60,fire 0.60
+s1.mp4,smoke,2nd fine-tune + old verifier,143,142,142,0,1,True,1.04,smoke 1.04
+s1.mp4,smoke,3rd fine-tune + final verifier,143,134,5,0,0,False,NaN,
+s2.mp4,smoke,2nd fine-tune + old verifier,495,467,431,1,0,False,NaN,fire 1.67
+s2.mp4,smoke,3rd fine-tune + final verifier,495,470,372,1,0,False,NaN,fire 0.63
+s3.mp4,smoke,2nd fine-tune + old verifier,140,135,135,0,1,True,1.20,smoke 1.20
+s3.mp4,smoke,3rd fine-tune + final verifier,140,115,114,0,1,True,4.00,smoke 4.00
