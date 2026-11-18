@@ -2,11 +2,7 @@
 
 This course project turns video into timestamped **fire** and **smoke** alarms. **YOLO26-m locates possible events, EfficientNet-B0 checks each proposed region, and temporal rules decide when the evidence is strong enough to raise an alarm.** The program processes video in order and runs offline with the included YOLO26-m detector and updated EfficientNet-B0 verifier.
 
-| Team member | Roll number |
-|---|---|
-| Harsh | 142301010 |
-| Shreekanth | 142301018 |
-| Vikas | 142301001 |
+
 
 The [technical report](Report/report.pdf) contains the full methodology, experiments, and individual contributions.
 
